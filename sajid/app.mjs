@@ -1,3 +1,3 @@
-import { addTwo } from "./addTwo.mjs";
+import addTwo from "./addTwo.mjs";
 
-console.log(addTwo(2))
+console.log(addTwo(4))
