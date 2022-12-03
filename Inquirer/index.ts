@@ -3,13 +3,15 @@ import inquirer from 'inquirer';
 const questions = async ()=>{
     const answers = await inquirer.prompt([
     {
-        type: 'rawlist',
-        name: 'framework',
-        message: 'Which framework do you want to use?',
-        choices: ['React', 'Vue', 'Angular'],
+        //input, list, rawlist, expand, checkbox, confirm, input, password, editor
+        type: 'input',
+        // type: 'rawlist', 
+        name: 'myanswer',
+        message: 'what is your answer?',
+        // choices: ['React', 'Vue', 'Angular'],
     }
 ])
-return answers.framework;
+return answers.myanswer;
 }
 let fw=await questions();
-console.log('\n','I use',fw,'framework');
+console.log('my answer is==> ', fw);
